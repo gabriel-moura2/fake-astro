@@ -2,11 +2,15 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { AppNavBar } from '../src/components';
+import { HomeScreen } from '../src/screens';
 
 export default function Home() {
 	const router = useRouter();
    	const [sessionId, setSessionId] = useState(router.query.hash ?? "");
    	const isUserLogged = () => (sessionId ? true : false);
+	const [screen, setScreen] = useState(0);
+
+	const screens = [<HomeScreen/>];
 	
 	return (
 		<div>
@@ -18,6 +22,7 @@ export default function Home() {
 			</Head>
 			<main>
 				<AppNavBar userLogged={isUserLogged()} logoutFunction={(e) => setSessionId("")} />
+				{screens[screen]}
 			</main>
     	</div>
   )
