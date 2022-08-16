@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { pink } from '@mui/material/colors';
-import { Box, AppBar, Toolbar, Avatar, Typography, Button } from '@mui/material';
+import { Box, AppBar, Toolbar, Avatar, Typography } from '@mui/material';
+import AppLoginLogoutButton from './AppLoginLogoutButton';
 
 const AppNavBar = props => {
 	const LogoIcon = () => (
@@ -19,7 +20,8 @@ const AppNavBar = props => {
 				<Typography variant="h4" component="div"  sx={{ flexGrow: 1, ml: 3, fontFamily: 'Yellowtail, cursive' }}>
 						Fake Astro
 				</Typography>
-				<Button color="secondary" variant="contained" href="/login">Login</Button>
+				<AppLoginLogoutButton login={!props.userLogged}
+               onLogout={props.logoutFunction} />
 				</Toolbar>
 			</AppBar>
 		</Box>
