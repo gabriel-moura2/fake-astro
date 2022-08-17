@@ -10,7 +10,7 @@ export default function Home() {
    	const isUserLogged = () => (sessionId ? true : false);
 	const [screen, setScreen] = useState(0);
 
-	const screens = [<HomeScreen/>];
+	const screens = [<HomeScreen key="0"/>];
 	
 	return (
 		<div>
