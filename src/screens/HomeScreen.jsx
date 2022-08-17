@@ -4,14 +4,14 @@ import { AppTitle, AppButtonLink } from '../components/';
 const HomeScreen = props => {
 	return (
 		<Container>
-			<AppTitle>
+			<AppTitle key="1">
 				Do psychological <AppButtonLink value="tests" />.
 			</AppTitle>
-			<AppTitle>
-				Keep a <AppButtonLink value="diary" />.
+			<AppTitle key="2">
+				Keep a <AppButtonLink value="journal" />.
 			</AppTitle>
-			<AppTitle>
-				All about <AppButtonLink value="astrology" />.
+			<AppTitle key="3">
+				All our <AppButtonLink value="articles" />.
 			</AppTitle>
 		</Container>
 	);
