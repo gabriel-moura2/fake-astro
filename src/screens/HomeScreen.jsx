@@ -5,7 +5,7 @@ const HomeScreen = props => {
 	return (
 		<Container>
 			<AppTitle>
-				Do psychological <AppButtonLink value="tests" />.
+				Take psychological <AppButtonLink value="tests" />.
 			</AppTitle>
 			<AppTitle>
 				Keep a <AppButtonLink value="journal" />.
