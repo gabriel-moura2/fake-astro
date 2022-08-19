@@ -1,16 +1,11 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import { AppNavBar } from '../src/components';
-import { HomeScreen, TestScreen } from '../src/screens';
+import { Container } from '@mui/material';
+import { AppTitle, AppButtonLink } from '../src/components/';
 
 export default function Home() {
 	const router = useRouter();
-   	const [sessionId, setSessionId] = useState(router.query.hash ?? "");
-   	const isUserLogged = () => (sessionId ? true : false);
-	const [screen, setScreen] = useState(1);
-
-	const screens = [<HomeScreen key="0"/>, <TestScreen key="1" />];
 	
 	return (
 		<div>
@@ -21,8 +16,17 @@ export default function Home() {
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
 			</Head>
 			<main>
-				<AppNavBar userLogged={isUserLogged()} logoutFunction={(e) => setSessionId("")} />
-				{screens[screen]}
+				<Container>
+					<AppTitle>
+						Take psychological <AppButtonLink value="tests" href="/test/ansiedade" />.
+					</AppTitle>
+					<AppTitle>
+						Keep a <AppButtonLink value="journal" />.
+					</AppTitle>
+					<AppTitle>
+						All our <AppButtonLink value="articles" />.
+					</AppTitle>
+				</Container>
 			</main>
     	</div>
   )

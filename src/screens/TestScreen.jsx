@@ -1,4 +1,3 @@
-import { Container, Card, CardMedia } from '@mui/material';
 import { AppCardQuiz } from '../components/';
 
 const TestScreen = props => {

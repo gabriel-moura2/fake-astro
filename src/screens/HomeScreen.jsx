@@ -1,11 +1,12 @@
-import { Container, Link } from '@mui/material';
+import Link from 'next/link';
+import { Container } from '@mui/material';
 import { AppTitle, AppButtonLink } from '../components/';
 
 const HomeScreen = props => {
 	return (
 		<Container>
 			<AppTitle>
-				Take psychological <AppButtonLink value="tests" />.
+				Take psychological <Link href="/test/1">test</Link>.
 			</AppTitle>
 			<AppTitle>
 				Keep a <AppButtonLink value="journal" />.

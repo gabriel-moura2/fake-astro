@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Container, Box, Avatar, Typography, TextField, FormControlLabel, Checkbox, Button, Grid, Link } from '@mui/material';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import '../styles/Login.module.css';
 
 const Login = (props) => {
