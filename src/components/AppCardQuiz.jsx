@@ -24,6 +24,24 @@ const AppCardQuiz = ({ quiz }) => {
 			</div>
 		)
 	)
+
+	pages = pages.concat(
+		quiz.questions.map((q) => (
+			<div>
+				<CardMedia component="img" image={q.image} />
+				<CardContent>
+					<Typography gutterBottom variant="h5" component="div">
+						{ q.title }
+					</Typography>
+				</CardContent>
+				<CardActions>
+					{q.answers.map((a => (
+						<Button variant="contained" onClick={handleClick}>{a.answer}</Button>
+					)))}
+				</CardActions>
+			</div>
+		))
+	)
 	
 	return (
 		<Container sx={{my: 5, maxWidth: 'md'}}>
@@ -35,6 +53,8 @@ const AppCardQuiz = ({ quiz }) => {
 							sx={{mx: 'auto'}}
 							page={page}
 							onChange={(e, n) => setPage(n)}
+							hidePrevButton
+							hideNextButton
 						/>
 					</Stack>
 				</CardContent>
