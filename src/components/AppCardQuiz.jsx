@@ -27,7 +27,7 @@ const AppCardQuiz = ({ quiz }) => {
 
 	pages = pages.concat(
 		quiz.questions.map((q) => (
-			<div>
+			<div key={q.id}>
 				<CardMedia component="img" image={q.image} />
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="div">
@@ -36,7 +36,7 @@ const AppCardQuiz = ({ quiz }) => {
 				</CardContent>
 				<CardActions>
 					{q.answers.map((a => (
-						<Button variant="contained" onClick={handleClick}>{a.answer}</Button>
+						<Button key={a.id} variant="contained" onClick={handleClick}>{a.answer}</Button>
 					)))}
 				</CardActions>
 			</div>
