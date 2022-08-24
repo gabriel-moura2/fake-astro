@@ -34,9 +34,9 @@ const AppCardQuiz = ({ quiz }) => {
 						{ q.title }
 					</Typography>
 				</CardContent>
-				<CardActions>
+				<CardActions sx={{flexDirection: "column"}}>
 					{q.answers.map((a => (
-						<Button key={a.id} variant="contained" onClick={handleClick}>{a.answer}</Button>
+						<Button sx={{m: 1}} key={a.id} fullWidth variant="contained" onClick={handleClick}>{a.answer}</Button>
 					)))}
 				</CardActions>
 			</div>

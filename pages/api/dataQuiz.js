@@ -1,7 +1,6 @@
-import { AppCardQuiz } from '../../src/components/';
-
-const Test = props => {
-	const quizApi = {
+export default (req, res) => {
+  res.status(200).json({
+	  egoNeed: {
 		captionImage: "../ego.png",
 		captionTitle: "Como você expressa seu ego e como pode evoluir para seu verdadeiro eu",
 		questions: [
@@ -46,10 +45,5 @@ const Test = props => {
 			}
 		]
 	}
-	
-	return (
-		<AppCardQuiz quiz={quizApi} />
-	)
+  })
 }
-
-export default Test;

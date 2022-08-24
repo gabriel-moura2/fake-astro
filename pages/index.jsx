@@ -16,7 +16,7 @@ export default function Home() {
 			<main>
 				<Container>
 					<AppTitle>
-						Take psychological <AppButtonLink value="tests" href="/test/ansiedade" />.
+						Take psychological <AppButtonLink value="quiz" href="/quiz/egoNeed"/>.
 					</AppTitle>
 					<AppTitle>
 						Keep a <AppButtonLink value="journal" />.
