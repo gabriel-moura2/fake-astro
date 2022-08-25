@@ -16,7 +16,7 @@ export default (req, res) => {
 					},
 					{
 						id: 2,
-						answer: 'Faço algumas gambiarras',
+						answer: 'Faço algumas gambiarras de vez em quando',
 						point: []
 					},
 					{
@@ -34,7 +34,7 @@ export default (req, res) => {
 			{
 				id: 2,
 				image: '',
-				title: 'Você é introspectivo?',
+				title: 'Você gosta de ser introspectivo?',
 				answers: [
 					{
 						id: 1,
