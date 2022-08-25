@@ -13,7 +13,7 @@ const QuizContainer = props => {
 	const pages = props.children
 	
 	return (
-		<Container sx={{my: 5, maxWidth: 'md'}}>
+		<Container sx={{my: 5, mt: 16, maxWidth: 'md'}}>
 			<Card>
 				<CardContent>
 					<Stack>

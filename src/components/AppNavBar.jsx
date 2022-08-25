@@ -14,7 +14,7 @@ const AppNavBar = props => {
 	
 	return (
 		<Box sx={{ flexGrow: 1 }}>
-			<AppBar position="static">
+			<AppBar>
 				<Toolbar>
 				<Avatar component="a" href="/" alt="Fake Astro" src="/logo.png" sx={{ width: 56, height: 56 }}/>
 				<Typography variant="h4" component="div"  sx={{ flexGrow: 1, ml: 3, fontFamily: 'Yellowtail, cursive' }}>

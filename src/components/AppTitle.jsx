@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 
 const AppTitle = props => {
 	return (
-		<Typography sx={{textAlign: 'center', my: 6}} variant="h5" {...props} >
+		<Typography sx={{my: 10, mx: 3}} color="white" variant="h4" {...props}>
 			{props.children}
 		</Typography>
 	)
