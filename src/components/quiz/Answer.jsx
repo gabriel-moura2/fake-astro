@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Button } from '@mui/material';
-import { pageContext } from './QuizContainer';
+import { pageContext } from './Questions';
 
 const QuizAnswer = props => {
 	const handleClick = useContext(pageContext);

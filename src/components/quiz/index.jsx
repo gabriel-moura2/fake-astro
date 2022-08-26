@@ -1,8 +1,9 @@
-import QuizContainer from './QuizContainer'
-import QuizCaption from './QuizCaption'
-import QuizQuestion from './QuizQuestion'
-import QuizTitle from './QuizTitle'
-import QuizAnswers from './QuizAnswers'
-import QuizAnswer from './QuizAnswer'
+import QuizContainer from './Container'
+import QuizCaption from './Caption'
+import QuizQuestion from './Question'
+import QuizQuestions from './Questions'
+import QuizTitle from './Title'
+import QuizAnswers from './Answers'
+import QuizAnswer from './Answer'
 
-export { QuizContainer, QuizCaption, QuizQuestion, QuizTitle, QuizAnswers, QuizAnswer }
+export { QuizContainer as Container, QuizCaption as Caption, QuizQuestion as Question, QuizQuestions as Questions, QuizTitle as Title, QuizAnswers as Answers, QuizAnswer as Answer }

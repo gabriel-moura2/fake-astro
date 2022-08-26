@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material';
-import { pageContext } from './QuizContainer';
+import { pageContext } from './Container';
 
 const QuizCaption = props => {
 	const handleClick = useContext(pageContext);
