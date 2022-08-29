@@ -1,4 +1,4 @@
-import { Container, Caption, Question, Questions, Title, Answers, Answer } from '/src/components/quiz'
+import { Container, Caption, Question, Questions, Title, Answers, Answer, Result, Results } from '/src/components/quiz'
 
 const egoNeed = props => {
 	return (
@@ -20,6 +20,14 @@ const egoNeed = props => {
 					</Answers>
 				</Question>
 			</Questions>
+			<Results>
+				<Result key="1">
+					Você é taurino
+				</Result>
+				<Result key="2">
+					Você é geminiano
+				</Result>
+			</Results>
 		</Container>
 	)
 }

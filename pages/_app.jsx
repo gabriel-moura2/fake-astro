@@ -1,4 +1,4 @@
-import { AppNavBar } from '../src/components';
+import { AppNavBar, AppFooter } from '../src/components';
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
 	  <div>
 	  	<AppNavBar />
 		<Component {...pageProps} />
+		<AppFooter />
 	  </div>
   )	
 }
